@@ -1,3 +1,3 @@
-poupon.controller('IndexCtrl', ['$scope', function ($scope) {
-  console.log("Index");
+poupon.controller('IndexCtrl', ['$scope', 'Deals', function ($scope, Deals) {
+  $scope.deals = Deals.query();
 }]);

@@ -1,3 +1,3 @@
-poupon.controller('DetailCtrl', ['$scope', function ($scope) {
-  console.log("Detail");
+poupon.controller('DetailCtrl', ['$scope', 'Deals', '$routeParams', function ($scope, Deals, $routeParams) {
+  $scope.deal = Deals.get({id: $routeParams.deal_id});
 }]);

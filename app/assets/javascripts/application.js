@@ -13,11 +13,12 @@
 //= require jquery
 //= require angular
 //= require angular-route
+//= require angular-resource
 //= require_self
 //= require_tree .
 
 /* Module */
-var poupon = angular.module('poupon', ['ngRoute']);
+var poupon = angular.module('poupon', ['ngRoute', 'ngResource']);
 
 poupon.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
