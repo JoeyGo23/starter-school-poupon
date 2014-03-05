@@ -44,6 +44,15 @@ header {
   strong {
     color: #82b548;
   }
+
+  .pushed.ng-enter {
+    @include opacity(0);
+    @include transition(opacity 1s ease-in);
+  }
+
+  .pushed.ng-enter.ng-enter-active {
+    @include opacity(1);
+  }
 }
 
 .deals-detail {

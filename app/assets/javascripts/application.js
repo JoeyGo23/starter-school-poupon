@@ -14,11 +14,12 @@
 //= require angular
 //= require angular-route
 //= require angular-resource
+//= require angular-animate
 //= require_self
 //= require_tree .
 
 /* Module */
-var poupon = angular.module('poupon', ['ngRoute', 'ngResource']);
+var poupon = angular.module('poupon', ['ngRoute', 'ngResource', 'ngAnimate']);
 
 poupon.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
