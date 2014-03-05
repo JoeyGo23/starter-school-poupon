@@ -12,8 +12,24 @@
 //
 //= require jquery
 //= require angular
+//= require angular-route
 //= require_self
 //= require_tree .
 
 /* Module */
-var poupon = angular.module('poupon', []);
+var poupon = angular.module('poupon', ['ngRoute']);
+
+poupon.config(['$routeProvider', function ($routeProvider) {
+  $routeProvider
+    .when('/', {
+      templateUrl: '/assets/index.html',
+      controller: 'IndexCtrl'
+    })
+    .when('/deal/:deal_id', {
+      templateUrl: '/assets/detail.html',
+      controller: 'DetailCtrl'
+    })
+    .otherwise({
+      redirectTo: '/'
+    })
+}]);
