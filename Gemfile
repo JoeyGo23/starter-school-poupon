@@ -42,6 +42,9 @@ gem 'bootstrap-sass', '~> 3.1.1'
 # Active Admin
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+# Pusher
+gem 'pusher'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
